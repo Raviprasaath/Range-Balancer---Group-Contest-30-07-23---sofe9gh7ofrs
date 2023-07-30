@@ -23,36 +23,18 @@ const App = () => {
   return (
     <div>
       <div id="max-sum-holder">
-        <label htmlFor="max-sum">Max Sum:</label>
-        <input
-          id="max-sum"
-          type="number"
-          value={maxSum}
-          onChange={handleMaxSumChange}
-        />
+        <label for="max-sum">Input max sum:-</label>
+        <input id="max-sum" type="number" value={maxSum} onChange={handleMaxSumChange}/>
       </div>
 
       <div id="range-a-holder">
-        <label htmlFor="range-a">Range A:</label>
-        <input
-          id="range-a"
-          type="range"
-          value={rangeA}
-          max={maxSum - rangeB}
-          onChange={handleRangeAChange}
-        />
+        <input id="range-a" type="range" value={rangeA} max={maxSum - rangeB} onChange={handleRangeAChange}/>
         <div id="range-a-value">{rangeA}</div>
       </div>
 
       <div id="range-b-holder">
         <label htmlFor="range-b">Range B:</label>
-        <input
-          id="range-b"
-          type="range"
-          value={rangeB}
-          max={maxSum - rangeA}
-          onChange={handleRangeBChange}
-        />
+        <input id="range-b" type="range" value={rangeB} max={maxSum - rangeA} onChange={handleRangeBChange}/>
         <div id="range-b-value">{rangeB}</div>
       </div>
 
